@@ -1,8 +1,7 @@
 namespace Mochi;
-public class cliente
+public class Cliente
 {
 string Nome;
-Int64 Senha;
 
 public void SetNome (string nome)
 {
@@ -12,6 +11,5 @@ public String GetNome()
 {
     return Nome;
 }
-
 
 }

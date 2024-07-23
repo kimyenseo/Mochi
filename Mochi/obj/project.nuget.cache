@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "loXDME1uKJu2bNE0HWefj/eDrbe1/XzHAAGIeng8oDEPOiXlqa+TRqJDJMZLs7/XG7TsdQqHBrLtn1ArtiEIsw==",
+  "dgSpecHash": "d8c5wQxyWAuAuvAda1C817ftn1VI6+iteR31OFIPMs8lQKfokNYhNitUdsIE9n1BPvwcxAVoZfQzL3jXSWWHCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aluno\\Mochi\\Mochi.csproj",
+  "projectFilePath": "C:\\Users\\Aluno\\Downloads\\Mochi\\Mochi\\Mochi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aluno\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0-rc.1.23419.4\\microsoft.extensions.configuration.8.0.0-rc.1.23419.4.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno\\Mochi\\Mochi.csproj": {}
+    "C:\\Users\\Aluno\\Downloads\\Mochi\\Mochi\\Mochi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno\\Mochi\\Mochi.csproj": {
+    "C:\\Users\\Aluno\\Downloads\\Mochi\\Mochi\\Mochi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\Mochi\\Mochi.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno\\Downloads\\Mochi\\Mochi\\Mochi.csproj",
         "projectName": "Mochi",
-        "projectPath": "C:\\Users\\Aluno\\Mochi\\Mochi.csproj",
+        "projectPath": "C:\\Users\\Aluno\\Downloads\\Mochi\\Mochi\\Mochi.csproj",
         "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\Mochi\\obj\\",
+        "outputPath": "C:\\Users\\Aluno\\Downloads\\Mochi\\Mochi\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
