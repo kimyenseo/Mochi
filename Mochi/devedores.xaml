@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YourNamespace.DevedoresPage"
+             BackgroundColor="#B0C4DE">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+        <!-- Título e Imagem no topo -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
+            <Label Text="Devedores" FontSize="Large" VerticalOptions="Center" />
+            <Image Source="devedores_icon.png" WidthRequest="50" HeightRequest="50" />
+        </StackLayout>
+
+        <!-- Campo de Nome -->
+        <Entry x:Name="entryNome" Placeholder="Nome xxxx" WidthRequest="200" HorizontalOptions="Center" />
+
+        <!-- Campo de Valor -->
+        <Entry x:Name="entryValor" Placeholder="Valor xxxx" WidthRequest="200" HorizontalOptions="Center" />
+
+        <!-- Botões de Cancelar e Confirmar -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+            <Button Text="X" BackgroundColor="Red" TextColor="White" WidthRequest="50" Clicked="OnCancelButtonClicked" />
+            <Button Text="✓" BackgroundColor="Green" TextColor="White" WidthRequest="50" Clicked="OnConfirmButtonClicked" />
+        </StackLayout>
+
+        <!-- Botão de Voltar -->
+        <Button Text="back" WidthRequest="100" HorizontalOptions="Center" Clicked="OnBackButtonClicked" />
+    </StackLayout>
+</ContentPage>
