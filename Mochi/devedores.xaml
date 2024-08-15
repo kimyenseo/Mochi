@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="YourNamespace.DevedoresPage"
+             x:Class="Mochi.DevedoresPage"
              BackgroundColor="#B0C4DE">
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
-    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <!-- Título -->
+        <Frame Grid.Row="0" BackgroundColor="White" Padding="10" CornerRadius="20" HorizontalOptions="Center">
+            <Label Text="Devedores" FontSize="18" TextColor="Black" HorizontalOptions="Center"/>
+        </Frame>
 
-        <!-- Título e Imagem no topo -->
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
-            <Label Text="Devedores" FontSize="Large" VerticalOptions="Center" />
-            <Image Source="devedores_icon.png" WidthRequest="50" HeightRequest="50" />
+        <!-- Espaço vazio ou conteúdo principal -->
+        <BoxView Grid.Row="1" Color="Transparent"/>
+
+        <!-- Botões na parte inferior -->
+        <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="End" Spacing="20">
+           <ImageButton Source="voltar.png" Clicked="Voltar2" WidthRequest="30" HeightRequest="30"/>
+            <ImageButton Source="lixeira.png" Clicked="Lixeira1" WidthRequest="30" HeightRequest="30"/>
+            <ImageButton Source="adicionar.png" Clicked="Adicionar1" WidthRequest="30" HeightRequest="30"/>
         </StackLayout>
-
-        <!-- Campo de Nome -->
-        <Entry x:Name="entryNome" Placeholder="Nome xxxx" WidthRequest="200" HorizontalOptions="Center" />
-
-        <!-- Campo de Valor -->
-        <Entry x:Name="entryValor" Placeholder="Valor xxxx" WidthRequest="200" HorizontalOptions="Center" />
-
-        <!-- Botões de Cancelar e Confirmar -->
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
-            <Button Text="X" BackgroundColor="Red" TextColor="White" WidthRequest="50" Clicked="OnCancelButtonClicked" />
-            <Button Text="✓" BackgroundColor="Green" TextColor="White" WidthRequest="50" Clicked="OnConfirmButtonClicked" />
-        </StackLayout>
-
-        <!-- Botão de Voltar -->
-        <Button Text="back" WidthRequest="100" HorizontalOptions="Center" Clicked="OnBackButtonClicked" />
-    </StackLayout>
+    </Grid>
 </ContentPage>

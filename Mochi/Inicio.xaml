@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mochi.InicioPage"
+             BackgroundColor="LightSteelBlue"
+             Shell.NavBarIsVisible="false">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        
+        <!-- Imagem do boné -->
+        <Image Source="bone.png" WidthRequest="100" HeightRequest="100"/>
+
+        <!-- Texto "Tela inicio" -->
+        <Frame BackgroundColor="White" Padding="10" Margin="20,10,20,0" HasShadow="True" BorderColor="Black">
+            <Button Text="Tela inicio" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"
+                   TextColor="Black"
+                   Clicked="InicioButton"/>
+        </Frame>
+
+    </StackLayout>
+</ContentPage>

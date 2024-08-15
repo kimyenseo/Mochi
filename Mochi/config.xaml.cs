@@ -1,6 +1,6 @@
 using Microsoft.Maui.Controls;
 
-namespace SeuApp
+namespace Mochi
 {
     public partial class AtualizacoesPage : ContentPage
     {

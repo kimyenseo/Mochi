@@ -1,35 +1,21 @@
-using Microsoft.Maui.Controls;
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mochi.CadastroClientePage"
+             Title="Cadastro de Cliente">
+    <StackLayout Padding="20">
+        <Label Text="Nome" FontSize="Medium" />
+        <Entry x:Name="NomeEntry" Placeholder="Digite o nome" />
 
-namespace SeuApp
-{
-    public partial class CadastroClientePage : ContentPage
-    {
-        public CadastroClientePage()
-        {
-            InitializeComponent();
-        }
+        <Label Text="Endereço" FontSize="Medium" Margin="0,20,0,0" />
+        <Entry x:Name="EnderecoEntry" Placeholder="Digite o endereço" />
 
-        private void OnCancelClicked(object sender, EventArgs e)
-        {
-            // Navega de volta ou limpa os campos
-            Navigation.PopAsync(); // Volta para a página anterior
-        }
+        <Label Text="Telefone" FontSize="Medium" Margin="0,20,0,0" />
+        <Entry x:Name="TelefoneEntry" Placeholder="Digite o telefone" Keyboard="Telephone" />
 
-        private void OnSaveClicked(object sender, EventArgs e)
-        {
-            // Obtém os valores dos campos
-            var nome = NomeEntry.Text;
-            var endereco = EnderecoEntry.Text;
-            var telefone = TelefoneEntry.Text;
-
-            // Adicione sua lógica de salvamento aqui
-            // Por exemplo, salve os dados em um banco de dados ou envie para uma API
-
-            // Mostra uma mensagem de confirmação
-            DisplayAlert("Sucesso", "Cliente cadastrado com sucesso", "OK");
-
-            // Navega de volta ou limpa os campos
-            Navigation.PopAsync(); // Volta para a página anterior
-        }
-    }
-}
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,20,0,0">
+            <Button Text="Cancelar" BackgroundColor="Red" TextColor="White" Clicked="OnCancelClicked"/>
+            <Button Text="Salvar" BackgroundColor="Green" TextColor="White" Clicked="OnSaveClicked" Margin="20,0,0,0"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

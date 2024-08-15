@@ -24,6 +24,48 @@ build_metadata.AdditionalFiles.ManifestResourceName = Mochi.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[C:/Users/Aluno/Mochi/Mochi/cadastro.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mochi.cadastro.xaml
+build_metadata.AdditionalFiles.TargetPath = cadastro.xaml
+build_metadata.AdditionalFiles.RelativePath = cadastro.xaml
+
+[C:/Users/Aluno/Mochi/Mochi/cadastrocliente.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mochi.cadastrocliente.xaml
+build_metadata.AdditionalFiles.TargetPath = cadastrocliente.xaml
+build_metadata.AdditionalFiles.RelativePath = cadastrocliente.xaml
+
+[C:/Users/Aluno/Mochi/Mochi/config.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mochi.config.xaml
+build_metadata.AdditionalFiles.TargetPath = config.xaml
+build_metadata.AdditionalFiles.RelativePath = config.xaml
+
+[C:/Users/Aluno/Mochi/Mochi/configuração.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mochi.configuração.xaml
+build_metadata.AdditionalFiles.TargetPath = configuração.xaml
+build_metadata.AdditionalFiles.RelativePath = configuração.xaml
+
+[C:/Users/Aluno/Mochi/Mochi/ContaPagar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mochi.ContaPagar.xaml
+build_metadata.AdditionalFiles.TargetPath = ContaPagar.xaml
+build_metadata.AdditionalFiles.RelativePath = ContaPagar.xaml
+
+[C:/Users/Aluno/Mochi/Mochi/devedores.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mochi.devedores.xaml
+build_metadata.AdditionalFiles.TargetPath = devedores.xaml
+build_metadata.AdditionalFiles.RelativePath = devedores.xaml
+
+[C:/Users/Aluno/Mochi/Mochi/Inicio.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mochi.Inicio.xaml
+build_metadata.AdditionalFiles.TargetPath = Inicio.xaml
+build_metadata.AdditionalFiles.RelativePath = Inicio.xaml
+
 [C:/Users/Aluno/Mochi/Mochi/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mochi.MainPage.xaml
@@ -41,3 +83,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mochi.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Aluno/Mochi/Mochi/Selecionar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mochi.Selecionar.xaml
+build_metadata.AdditionalFiles.TargetPath = Selecionar.xaml
+build_metadata.AdditionalFiles.RelativePath = Selecionar.xaml

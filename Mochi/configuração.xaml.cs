@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Maui.Controls;
 
-namespace YourNamespace
+namespace Mochi
 {
     public partial class ConfigPage : ContentPage
     {
