@@ -11,18 +11,48 @@
         </Grid.RowDefinitions>
 
         <!-- Título -->
-        <Frame Grid.Row="0" BackgroundColor="White" Padding="10" CornerRadius="20" HorizontalOptions="Center">
-            <Label Text="Devedores" FontSize="18" TextColor="Black" HorizontalOptions="Center"/>
+        <Frame Grid.Row="0"
+                BackgroundColor="White"
+                Padding="10"
+                CornerRadius="20"
+                HorizontalOptions="Center">
+            <Label Text="Devedores"
+                    FontSize="18"
+                    TextColor="Black"
+                    HorizontalOptions="Center"/>
         </Frame>
 
-        <!-- Espaço vazio ou conteúdo principal -->
-        <BoxView Grid.Row="1" Color="Transparent"/>
+        <!-- Espaço para editar textos -->
+        <StackLayout Grid.Row="1"
+                    Padding="10"
+                    Spacing="10">
+            <Entry Placeholder="Linha 1"/>
+            <Entry Placeholder="Linha 2"/>
+            <Entry Placeholder="Linha 3"/>
+            <!-- Adicione mais linhas conforme necessário -->
+        </StackLayout>
 
         <!-- Botões na parte inferior -->
-        <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="End" Spacing="20">
-           <ImageButton Source="voltar.png" Clicked="Voltar2" WidthRequest="30" HeightRequest="30"/>
-            <ImageButton Source="lixeira.png" Clicked="Lixeira1" WidthRequest="30" HeightRequest="30"/>
-            <ImageButton Source="adicionar.png" Clicked="Adicionar1" WidthRequest="30" HeightRequest="30"/>
+        <StackLayout Grid.Row="2"
+                Orientation="Horizontal"
+                HorizontalOptions="End"
+                Spacing="20">
+            <!-- Botão de Voltar -->
+            <Button Text="Voltar"
+                    Clicked="ButtonVoltar"/>
+
+            <!-- Botão de Mover para Lixeira -->
+            <Button Text="Mover para Lixeira"
+                    Clicked="OnMoverParaLixeiraClicked"/>
+
+            <!-- Botão de Prosseguir -->
+            <Button Text="Prosseguir"
+                    Clicked="OnProsseguirClicked"/>
         </StackLayout>
     </Grid>
+
+
+
+
 </ContentPage>
+

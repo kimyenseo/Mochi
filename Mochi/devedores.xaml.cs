@@ -23,5 +23,20 @@ namespace Mochi
         {
             
         }
+
+        private void ButtonVoltar(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnMoverParaLixeiraClicked(object sender, EventArgs e)
+        {
+
+        }  
+
+        private void OnProsseguirClicked(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
