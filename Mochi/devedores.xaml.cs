@@ -9,32 +9,13 @@ namespace Mochi
             InitializeComponent();
         }
 
-           private void Voltar2(object sender, EventArgs e)
+        private void OnBackClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new SelecionarPage();
-        }
-
-        private void Lixeira1(object sender, EventArgs e)
-        {
+            // Lógica para voltar à página anterior
             
         }
 
-        private void Adicionar1(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void ButtonVoltar(object sender, EventArgs e)
-        {
-
-        }
-
-        private void OnMoverParaLixeiraClicked(object sender, EventArgs e)
-        {
-
-        }  
-
-        private void OnProsseguirClicked(object sender, EventArgs e)
+        private void OnAddClicked(object sender, EventArgs e)
         {
             
         }

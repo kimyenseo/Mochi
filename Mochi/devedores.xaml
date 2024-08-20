@@ -1,58 +1,53 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mochi.DevedoresPage"
-             BackgroundColor="#B0C4DE">
-    <Grid Padding="10">
+             Title="Devedores">
+
+    <Grid BackgroundColor="LightSteelBlue" Padding="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <!-- Título -->
-        <Frame Grid.Row="0"
+        <!-- Barra superior com ícone de voltar e título -->
+        <Grid Grid.Row="0" ColumnSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" 
+                    ImageSource="voltar.png" 
+                    BackgroundColor="White"
+                    WidthRequest="80"
+                    HeightRequest="80"
+                    CornerRadius="25"
+                    Clicked="OnBackClicked"/>
+
+            <Label Grid.Column="1" 
+                   Text="Devedores" 
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold" 
+                   FontSize="20" />
+
+            <Image Grid.Column="2" 
+                   Source="money_icon.png" 
+                   WidthRequest="50"
+                   HeightRequest="50"/>
+        </Grid>
+
+        <!-- Botão flutuante para adicionar -->
+        <Button Grid.Row="1" 
+                ImageSource="adicionar.png"
                 BackgroundColor="White"
-                Padding="10"
-                CornerRadius="20"
-                HorizontalOptions="Center">
-            <Label Text="Devedores"
-                    FontSize="18"
-                    TextColor="Black"
-                    HorizontalOptions="Center"/>
-        </Frame>
-
-        <!-- Espaço para editar textos -->
-        <StackLayout Grid.Row="1"
-                    Padding="10"
-                    Spacing="10">
-            <Entry Placeholder="Linha 1"/>
-            <Entry Placeholder="Linha 2"/>
-            <Entry Placeholder="Linha 3"/>
-            <!-- Adicione mais linhas conforme necessário -->
-        </StackLayout>
-
-        <!-- Botões na parte inferior -->
-        <StackLayout Grid.Row="2"
-                Orientation="Horizontal"
+                WidthRequest="60"
+                HeightRequest="60"
+                CornerRadius="30"
+                VerticalOptions="End"
                 HorizontalOptions="End"
-                Spacing="20">
-            <!-- Botão de Voltar -->
-            <Button Text="Voltar"
-                    Clicked="ButtonVoltar"/>
+                Clicked="OnAddClicked"/>
 
-            <!-- Botão de Mover para Lixeira -->
-            <Button Text="Mover para Lixeira"
-                    Clicked="OnMoverParaLixeiraClicked"/>
-
-            <!-- Botão de Prosseguir -->
-            <Button Text="Prosseguir"
-                    Clicked="OnProsseguirClicked"/>
-        </StackLayout>
     </Grid>
-
-
-
-
 </ContentPage>
-
