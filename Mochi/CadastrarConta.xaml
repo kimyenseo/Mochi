@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mochi.CadastroDeContaPage"
+             Title="Cadastro de Conta">
+    <ContentPage.Content>
+        <Grid Padding="10" BackgroundColor="#B0C4DE">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Orientation="Horizontal" Grid.Row="0" VerticalOptions="Start">
+                <ImageButton Source="voltar.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" Clicked="VoltarButton"/>
+                <Label Text="Cadastro de Conta" FontSize="Large" VerticalOptions="Center" Margin="10,0"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Spacing="10" VerticalOptions="CenterAndExpand">
+                <Entry Placeholder="Campo 1" BackgroundColor="White" />
+                <Entry Placeholder="Campo 2" BackgroundColor="White" />
+                <Entry Placeholder="Campo 3" BackgroundColor="White" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                <Button Text="Salvar" BackgroundColor="White" TextColor="Black" />
+                <Button Text="Deletar" BackgroundColor="White" TextColor="Black" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

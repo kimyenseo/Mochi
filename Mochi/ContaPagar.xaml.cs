@@ -21,7 +21,7 @@ namespace Mochi
 
         private void AdicionarButton(object sender, EventArgs e)
         {
-            
+            Application.Current.MainPage = new CadastroDeContaPage();
         }
     }
 }

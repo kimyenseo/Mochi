@@ -1,13 +1,8 @@
 namespace Mochi;
 public class Devedores
 {
-    string pedido;
-    public void Setvalor(string pedido)
-    {
-        this.pedido = pedido;
-    }
-    public string Getpedido()
-    {
-        return pedido;
-    }
+  public int Id { get; set; }
+  public string Nome {get; set ;}
+  public string Valor { get; set; }
+  public string Pediddo { get; set; }
 }

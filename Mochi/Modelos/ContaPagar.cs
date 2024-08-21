@@ -1,17 +1,10 @@
 namespace Mochi;
 public class ContaPagar
 {
-    string validade;
-    public void Setvalidade(String validade)
-    {
-        this.validade = validade;
-    }
-
-    public string Getvalidade()
-
-    {
-        return validade;
-    }
+  public int Id { get; set; }
+  public string Nome {get; set ;}
+  public string Valor { get; set; }
+  public string Validade { get; set; }
 
 
 
