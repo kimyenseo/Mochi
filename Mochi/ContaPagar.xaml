@@ -44,5 +44,95 @@
                      HeightRequest="30"
                      Grid.Row="2"
                      Grid.Column="3"/>
+        <Label Text="Conta a ser pago"
+               FontSize="18"
+               TextColor="White"
+               HorizontalOptions="Center"/>
+
+        <Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Conta a ser pago"
+                       FontSize="18"
+                       TextColor="White"
+                       HorizontalOptions="Center"/>
+
+                <Frame Margin="20">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Botões organizados em uma linha -->
+                        <StackLayout Orientation="Horizontal"
+                                     HorizontalOptions="CenterAndExpand"
+                                     Grid.Row="0"
+                                     Grid.ColumnSpan="3">
+                            <ImageButton Source="voltar.png"
+                                         Clicked="Voltar1"
+                                         WidthRequest="30"
+                                         HeightRequest="30"
+                                         Margin="0,0,10,0"/>
+                            <ImageButton Source="adicionar.png"
+                                         Clicked="AdicionarButton"
+                                         WidthRequest="30"
+                                         HeightRequest="30"
+                                         Margin="10,0,0,0"/>
+                        </StackLayout>
+
+                        <!-- Linhas editáveis -->
+                        <Entry Placeholder="Linha 1"
+                               Grid.Row="1"
+                               Grid.ColumnSpan="3"
+                               Margin="0,10,0,0"/>
+
+                        <Entry Placeholder="Linha 2"
+                               Grid.Row="2"
+                               Grid.ColumnSpan="3"
+                               Margin="0,10,0,0"/>
+
+                        <Entry Placeholder="Linha 3"
+                               Grid.Row="3"
+                               Grid.ColumnSpan="3"
+                               Margin="0,10,0,0"/>
+
+                        <Entry Placeholder="Linha 4"
+                               Grid.Row="4"
+                               Grid.ColumnSpan="3"
+                               Margin="0,10,0,0"/>
+
+                        <Entry Placeholder="Linha 5"
+                               Grid.Row="5"
+                               Grid.ColumnSpan="3"
+                               Margin="0,10,0,0"/>
+                    </Grid>
+                </Frame>
+
+
+            </Grid>
+        </Frame>
+
     </Grid>
 </ContentPage>

@@ -14,16 +14,16 @@ namespace Mochi
         private void OnBackClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new SelecionarPage();
-            
+
         }
 
         private void OnAddClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new CadastrarDevedoresPage();
-            
+
         }
 
-          void Dev(object sender, SelectedItemChangedEventArgs e)
+        void Dev(object sender, SelectedItemChangedEventArgs e)
         {
             var page = new CadastrarDevedoresPage();
             page.devedores = e.SelectedItem as Devedores;
@@ -31,3 +31,6 @@ namespace Mochi
         }
     }
 }
+
+
+    

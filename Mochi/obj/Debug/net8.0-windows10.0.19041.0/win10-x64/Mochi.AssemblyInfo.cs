@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mochi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+da3904b6d6ce0169ab69c45ce81a27130cee79e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+9a6abb2e86d0822ca04449d219002c6c4fabc9ed")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mochi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mochi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

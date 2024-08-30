@@ -3,76 +3,79 @@
              x:Class="Mochi.DevedoresPage"
              Title="Devedores">
 
-    <Grid BackgroundColor="LightSteelBlue" Padding="10">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+  <Grid BackgroundColor="LightSteelBlue"
+      Padding="10">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
 
-        <!-- Barra superior com ícone de voltar e título -->
-        <Grid Grid.Row="0" ColumnSpacing="10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
-            </Grid.ColumnDefinitions>
+    <!-- Barra superior com ícone de voltar e título -->
+    <Grid Grid.Row="0"
+        ColumnSpacing="10">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+      </Grid.ColumnDefinitions>
 
-            <Button Grid.Column="0" 
-                    ImageSource="voltar.png" 
-                    BackgroundColor="White"
-                    WidthRequest="80"
-                    HeightRequest="80"
-                    CornerRadius="25"
-                    Clicked="OnBackClicked"/>
+      <Button Grid.Column="0"
+              ImageSource="voltar.png"
+              BackgroundColor="White"
+              WidthRequest="80"
+              HeightRequest="80"
+              CornerRadius="25"
+              Clicked="OnBackClicked"/>
 
-            <Label Grid.Column="1" 
-                   Text="Devedores" 
-                   VerticalOptions="Center"
-                   HorizontalOptions="Center"
-                   FontAttributes="Bold" 
-                   FontSize="20" />
+      <Label Grid.Column="1"
+             Text="Devedores"
+             VerticalOptions="Center"
+             HorizontalOptions="Center"
+             FontAttributes="Bold"
+             FontSize="20"/>
 
-            <Image Grid.Column="2" 
-                   Source="money_icon.png" 
-                   WidthRequest="50"
-                   HeightRequest="50"/>
+      <Image Grid.Column="2"
+             Source="money_icon.png"
+             WidthRequest="50"
+             HeightRequest="50"/>
 
-             <ListView x:Name="ListaClientes"
-              HasUnevenRows="True"
-              ItemSelected="Dev"
-              HorizontalOptions="Fill"
-              VerticalOptions="Fill">
-      <ListView.ItemTemplate>
-        <DataTemplate>
-          <ViewCell>
-            <VerticalStackLayout Padding="20"
-                                BackgroundColor="Pink">
-              <HorizontalStackLayout>
-                <Label Text="{Binding Nome}"
-                      FontSize="20"/>
-                <Label Text="{Binding Valor}"
-                      FontSize="20"
-                      Margin="10,0,0,0"/>
-              </HorizontalStackLayout>
-              <Label Text="{Binding Pedido}"
-                      FontSize="20"/>
-            </VerticalStackLayout>
-          </ViewCell>
-        </DataTemplate>
-      </ListView.ItemTemplate>
-    </ListView>       
-        </Grid>
-
-        <!-- Botão flutuante para adicionar -->
-        <Button Grid.Row="1" 
-                ImageSource="adicionar.png"
-                BackgroundColor="White"
-                WidthRequest="60"
-                HeightRequest="60"
-                CornerRadius="30"
-                VerticalOptions="End"
-                HorizontalOptions="End"
-                Clicked="OnAddClicked"/>
-
+      <ListView x:Name="ListaClientes"
+                HasUnevenRows="True"
+                ItemSelected="Dev"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <VerticalStackLayout Padding="20"
+                                   BackgroundColor="Pink">
+                <HorizontalStackLayout>
+                  <Label Text="{Binding Nome}"
+                         FontSize="20"/>
+                  <Label Text="{Binding Valor}"
+                         FontSize="20"
+                         Margin="10,0,0,0"/>
+                </HorizontalStackLayout>
+                <Label Text="{Binding Pedido}"
+                       FontSize="20"/>
+              </VerticalStackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
     </Grid>
+
+    <!-- Botão flutuante para adicionar -->
+    <Button Grid.Row="1"
+            ImageSource="adicionar.png"
+            BackgroundColor="White"
+            WidthRequest="60"
+            HeightRequest="60"
+            CornerRadius="30"
+            VerticalOptions="End"
+            HorizontalOptions="End"
+            Clicked="OnAddClicked"/>
+    
+
+  </Grid>
 </ContentPage>
