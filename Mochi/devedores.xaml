@@ -1,10 +1,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Mochi.DevedoresPage"
-             Title="Devedores">
+             x:Class="Mochi.DevedoresPage">
 
   <Grid BackgroundColor="LightSteelBlue"
-      Padding="10">
+        Padding="10">
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto"/>
       <RowDefinition Height="*"/>
@@ -12,7 +11,7 @@
 
     <!-- Barra superior com ícone de voltar e título -->
     <Grid Grid.Row="0"
-        ColumnSpacing="10">
+          ColumnSpacing="10">
       <Grid.ColumnDefinitions>
         <ColumnDefinition Width="Auto"/>
         <ColumnDefinition Width="*"/>
@@ -63,19 +62,10 @@
           </DataTemplate>
         </ListView.ItemTemplate>
       </ListView>
+      
     </Grid>
-
-    <!-- Botão flutuante para adicionar -->
-    <Button Grid.Row="1"
-            ImageSource="adicionar.png"
-            BackgroundColor="White"
-            WidthRequest="60"
-            HeightRequest="60"
-            CornerRadius="30"
-            VerticalOptions="End"
-            HorizontalOptions="End"
-            Clicked="OnAddClicked"/>
     
+
 
   </Grid>
 </ContentPage>
